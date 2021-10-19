@@ -1,24 +1,83 @@
-body{
-    position: relative;
+  html {
+      scroll-padding-top: 70px;
+      scroll-behavior: smooth;
   }
+  
+  body {
+    position: relative;
+    overflow-y: auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+  }
+  
+  h1, h2 {
+    font-family: alfarn, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h4 {
+      font-weight: 550;
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  strong {
+      font-weight: 600;
+  }
+
 
   .page-header {
       margin-top: 50px;
   }
 
+  .page-header small {
+      color:gray;
+      font-size: 80%;
+  }
+
   .jumbotron {
     margin: 0;
     padding: 30px;
+    min-height: 300px;
+    background-color: lightgray;
 }
+
+  .jumbotron h1 {
+      margin-bottom: 20px;
+  }
+
+  .jumbotron h4 {
+      margin-bottom: 50px;
+  }
 
   .row-content {
     padding: 60px 0;
     border-bottom: 3px ridge;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .testContent {
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .mainNav {
@@ -33,4 +92,23 @@ body{
 .btnOrange {
     background-color: #fa7300;
     color: white;
+}
+
+.carousel img {
+    width:200px;
+}
+
+.form-group {
+    padding: 5px 0;
+}
+
+#gallery img {
+    height: 150px;
+    padding: 10px 0;
+}
+
+#conPhone {
+    text-decoration: none;
+    color:#fa7300;
+    font-weight: 600;
 }
